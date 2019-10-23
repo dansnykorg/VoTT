@@ -54,7 +54,7 @@
     "rimraf": "^2.6.2",
     "send": "^0.16.2",
     "tfrecord": "^0.2.0",
-    "vott-ct": "^2.1.4"
+    "vott-ct": "^2.2.1"
   },
   "eslintIgnore": [
     "src/lib/detection_algorithms/detectionUtils.js"
