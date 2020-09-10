@@ -8,7 +8,9 @@
     "pretest": "eslint src/*.js src/lib",
     "test": "jasmine",
     "dist:winlinux": "build -wl --x64",
-    "dist:mac": "build -m --x64"
+    "dist:mac": "build -m --x64",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": "https://github.com/Microsoft/VoTT",
   "keywords": [
@@ -46,7 +48,7 @@
   "dependencies": {
     "async": "^2.6.1",
     "cntk-fastercnn": "^0.1.2",
-    "crypto-js": "^3.1.9-1",
+    "crypto-js": "^3.2.1",
     "electron-window-state": "^4.0.2",
     "reload": "^2.3.1",
     "remote": "^0.2.6",
@@ -54,9 +56,11 @@
     "rimraf": "^2.6.2",
     "send": "^0.16.2",
     "tfrecord": "^0.2.0",
-    "vott-ct": "^2.1.4"
+    "vott-ct": "^2.1.4",
+    "snyk": "^1.392.1"
   },
   "eslintIgnore": [
     "src/lib/detection_algorithms/detectionUtils.js"
-  ]
+  ],
+  "snyk": true
 }
